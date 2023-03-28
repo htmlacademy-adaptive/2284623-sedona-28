@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Лев Бахтин](https://up.htmlacademy.ru/adaptive/28/user/2284623).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://up.htmlacademy.ru/adaptive/28/user/73199).
 
 ---
 
