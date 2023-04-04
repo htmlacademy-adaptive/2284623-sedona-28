@@ -1,0 +1,249 @@
+.main-header {
+  width: 100%;
+  position: relative;
+}
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 185px;
+  height: 96px;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.main-nav {
+  width: 100%;
+  display: flex;
+}
+.main-nav__toggle {
+  margin: 17px 20px 17px auto;
+}
+.site-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+.site-list--hidden {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page__body {
+  width: 320px;
+  margin: 0;
+}
+.page {
+  width: 320px;
+}
+.toggle-button {
+  width: 23px;
+  height: 22px;
+  background-image: url('../../img/icons/icon-menu.svg');
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.toggle-button--hidden {
+  display: none;
+}
+.hero__banner {
+  margin-bottom: 32px;
+}
+.welcome-banner {
+  position: relative;
+}
+.welcome-banner::after {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 57px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -7%);
+  background-image: url(../../img/intro-triangle.svg);
+}
+.welcome-banner__text {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.title {
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+.title--left {
+  text-align: left;
+}
+.title--with-image {
+  color: #ffffff;
+}
+.title--bigger {
+  font-size: 21px;
+}
+.text-description {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.text-description--left {
+  text-align: left;
+}
+.text-description--with-image {
+  color: #ffffff;
+}
+.reasons__list {
+  margin: 0;
+  padding: 0;
+}
+.reasons__title {
+  margin: 0 18px 35px;
+}
+.reasons__text {
+  margin: 0 18px 32px;
+}
+.reasons-list {
+  list-style: none;
+}
+.advantages-card {
+  background-color: #ffffff;
+}
+.advantages-card__title {
+  margin: 0;
+  padding: 0;
+}
+.advantages-card__description {
+  margin: 0;
+  padding: 0;
+}
+.reason-card__advantages {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+}
+.reason-card__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+.reason-card__description {
+  margin: 0;
+  padding: 0;
+}
+.reason-card__wrapper {
+  padding: 24px 18px;
+}
+.reason-card__wrapper--with-image {
+  background-color: #81B3D2;
+}
+.reason-card__wrapper--gray {
+  background-color: #EEEEEE;
+}
+.reason-card__wrapper--triangle {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+.reason-card__image {
+  display: block;
+}
+.reason-card__advantages {
+  margin-bottom: 46px;
+}
+.advantages-list {
+  list-style: none;
+}
+.advantages-list__item {
+  padding: 0 18px 0 47px;
+}
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.search__wrapper {
+  padding-top: 38px;
+  padding-bottom: 49px;
+}
+.search__title {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.search__description {
+  padding: 0;
+  margin: 0 29px 32px;
+}
+.search__button {
+  padding: 16px 49px;
+  margin: 0 18px;
+}
+.button {
+  font-family: 'PT Sans Bold', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81B3D2;
+  text-transform: uppercase;
+  border: none;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 82px;
+  gap: 30px;
+  align-items: center;
+}
+.social__list {
+  margin: 0;
+}
+.social-list {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+/*# sourceMappingURL=style.css.map */
