@@ -7,15 +7,15 @@
 }
 
 .main-nav--closed .site-list {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: grid;
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
 .main-nav--opened .site-list {
-  position: absolute;
+  @media (max-width: 767px) {
+    position: absolute;
+  }
 }
 
 .main-nav__toggle {

@@ -1,3 +1,22 @@
 .reasons-list {
   list-style: none;
 }
+
+.reasons-list__item {
+  &:first-child {
+    position: relative;
+    &::before {
+      position: absolute;
+      display: block;
+      height: 37px;
+      width: 100%;
+      top: -21px;
+      content:"";
+      background-image: url("../../img/icons/blue-divider.png");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      z-index: 10;
+    }
+  }
+}
