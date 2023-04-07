@@ -5,8 +5,19 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  background-color: #ffffff;
   cursor: pointer;
+  z-index: 200;
+
+  &--burger {
+    background-image: url("../../img/icons/icon-menu.svg");
+    background-color: #ffffff;
+  }
+
+  &--cross {
+    background-image: url("../../img/icons/icon-cross.svg");
+    fill: #ffffff;
+    background-color: #81b3d2;
+  }
 
   &--hidden {
     display: none;

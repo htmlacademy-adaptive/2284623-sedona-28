@@ -12,39 +12,37 @@
       <a class="main-header__logo">
         <img src="img/logo.svg" width="185" height="96" alt="Город Седона.">
       </a>
-      <nav class="main-header__nav main-nav">
-        <!-- <div class="main-nav__wrapper"> -->
-          <ul class="main-nav__list site-list site-list--hidden">
-            <li class="site-list__item site-list__item--active">
+      <nav class="main-header__nav main-nav main-nav--nojs main-nav--closed">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active title">
               <a>
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item title">
               <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item title">
               <a href="form.html">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item title">
               <a href="https://htmlacademy.ru/">
                 HTML Academy
               </a>
             </li>
           </ul>
-          <button class="main-nav__toggle toggle-button" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-        <!-- </div> -->
+          <button class="main-nav__toggle toggle-button toggle-button--burger" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       </nav>
     </header>
     <main class="main-container">
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в седону</h1>
         <div class="hero__banner welcome-banner">
-          <img class="welcome-banner__background" alt="Горы" src="img/background-index.jpg" width="320" height="389">
+          <img class="welcome-banner__background" alt="Горы" src="img/background.jpg" width="320" height="389">
           <img class="welcome-banner__text" alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!"
             src="img/text-index.svg" width="282" height="214">
         </div>
@@ -172,5 +170,6 @@
         </div>
       <!-- </div> -->
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
