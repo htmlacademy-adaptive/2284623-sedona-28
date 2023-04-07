@@ -8,6 +8,10 @@
 
 .main-nav--closed .site-list {
   display: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
 }
 
 .main-nav--opened .site-list {
@@ -15,8 +19,11 @@
 }
 
 .main-nav__toggle {
-  // margin: 17px 20px 17px auto;
   position: absolute;
   right: 20px;
   top: 17px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
