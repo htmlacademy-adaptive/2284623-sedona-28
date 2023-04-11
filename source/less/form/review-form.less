@@ -6,6 +6,10 @@
 .review-form__block {
   margin: 0;
   margin-top: 24px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .review-form__list {
@@ -30,8 +34,80 @@
 
 .review-form__button {
   margin-bottom: 3px;
+  max-width: 324px;
+  align-self: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    max-width: 384px;
+  }
 }
 
 .review-form__tooltip {
   margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+.review-form__label--custom {
+  display: flex;
+  align-items: center;
+}
+
+.review__form__wrapper {
+  position: relative;
+
+  &::before {
+    @media (min-width: 768px) {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: #dbdbdb;
+      left: calc(50% - 1px/2);
+      top: calc(50% - 338px/2);
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 58px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 100px;
+  }
+
+  & .form-fieldset {
+    flex-grow: 1;
+  }
+}
+
+.review-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    width: 100%;
+  }
+}
+
+.review-form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
 }

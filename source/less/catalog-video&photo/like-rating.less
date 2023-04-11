@@ -4,3 +4,25 @@
   gap: 14px;
   align-items: center;
 }
+
+.like-rating__value {
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
+}
+
+.like-rating__like-icon {
+  cursor: pointer;
+
+  & path {
+    @media (min-width: 1200px) {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+.like-rating__button--click path{
+  fill: #ff0000;
+  opacity: 1;
+}
