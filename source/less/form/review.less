@@ -1,6 +1,22 @@
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
 .review__form {
   border-top: 1px solid #e5e5e5;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding: 0 60px;
+    border: none;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 120px;
+  }
 }
 
 .review__title {
@@ -9,4 +25,14 @@
 
 .review__text {
   margin: 0 20px 28px;
+  max-width: 436px;
+  align-self: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
 }
