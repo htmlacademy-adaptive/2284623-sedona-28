@@ -5,7 +5,34 @@
   gap: 7px;
   align-self: center;
 
+  &:hover {
+    & path {
+      fill: #81b3d2;
+    }
+
+    & b {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: #b3b3b3;
+     }
+
+     & b {
+      color: #b3b3b3;
+    }
+   }
+
   @media (min-width: 768px) {
     justify-self: end;
   }
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
