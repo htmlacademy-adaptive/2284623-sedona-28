@@ -14,6 +14,18 @@
 .like-rating__like-icon {
   cursor: pointer;
 
+  &:hover path {
+    opacity: 0.6;
+  }
+
+  &:active path {
+    opacity: 1;
+
+    @media (min-width: 1200px) {
+      opacity: 0.3;
+    }
+  }
+
   & path {
     @media (min-width: 1200px) {
       fill: #ffffff;
@@ -22,7 +34,19 @@
   }
 }
 
-.like-rating__button--click path {
-  fill: #ff0000;
-  opacity: 1;
+.like-rating__button--click {
+  & path {
+    fill: #ff0000;
+    opacity: 1;
+  }
+
+  &:hover path {
+    fill: #ff0000;
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: #000000;
+    opacity: 0.6;
+  }
 }

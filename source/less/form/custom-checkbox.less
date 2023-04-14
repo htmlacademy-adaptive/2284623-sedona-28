@@ -17,11 +17,19 @@
   opacity: 0;
   position: absolute;
   z-index: -10;
-}
 
-// .input-checkbox:focus + .custom-checkbox {
-//   box-shadow: 0 0 0 3px #83B3D3
-// }
+  &:hover + .custom-checkbox {
+    background-color: #e5e5e5;
+  }
+
+  &:active + .custom-checkbox {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
 
 .custom-checkbox::before {
   position: absolute;
@@ -59,11 +67,19 @@
   opacity: 0;
   position: absolute;
   z-index: -10;
-}
 
-// .input-radio:focus + .custom-radio {
-//   box-shadow: 0 0 0 3px #83B3D3
-// }
+  &:hover + .custom-radio {
+    background-color: #e5e5e5;
+  }
+
+  &:active + .custom-radio {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
 
 .custom-radio::before {
   position: absolute;
