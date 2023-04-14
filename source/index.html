@@ -47,9 +47,14 @@
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в седону</h1>
         <div class="hero__banner welcome-banner">
-          <img class="welcome-banner__background" alt="Горы" src="img/background.jpg" width="320" height="389">
-          <img class="welcome-banner__text" alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!"
-            src="img/text-index.svg" width="282" height="214">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/index-image/back-desktop.jpg 1x, img/index-image/back-desktop@2x.jpg 2x">
+              <img class="welcome-banner__background" alt="Горы" src="img/index-image/back-mobile.jpg" srcset="img/index-image/back-mobile@2x.jpg 2x" width="320"
+                height="389">
+          </picture>
+            <img class="welcome-banner__text" alt="Welcome to the gorgeus Sedona, because the Grand Canyon sucks!"
+              src="img/index-image/text-index.svg" width="282" height="214">
         </div>
       </section>
       <section class="reasons">
@@ -64,7 +69,17 @@
               <p class="reason-card__description text-description text-description--with-image">Седона — не аттракцион
                 для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="reason-card__image" src="img/town-reason.jpg" alt="Фотография города">
+            <div class="reason-card__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/index-image/town-reason-desktop.jpg 1x, img/index-image/town-reason-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/index-image/town-reason-tablet.jpg 1x, img/index-image/town-reason-tablet@2x.jpg 2x">
+                  <img class="reason-card__image" alt="Фотография города" src="img/index-image/town-reason-mobile.jpg" srcset="img/index-image/town-reason-mobile@2x.jpg 2x" width="320"
+                    height="260">
+              </picture>
+            </div>
+            <!-- <img class="reason-card__image" src="img/town-reason.jpg" alt="Фотография города" width="320" height="260"> -->
             <ul class="reason-card__advantages advantages-list">
               <li class="advantages-list__item advantages-card advantages-card--home">
                 <h4 class="advantages-card__title title title--left">Жильё</h4>
@@ -90,7 +105,17 @@
               <p class="reason-card__description text-description text-description--with-image">Да, по нему можно
                 пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="reason-card__image" src="img/devil-bridge-reason.jpg" alt="Фотография моста дьявола">
+            <div class="reason-card__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/index-image/bridge-reason-desktop.jpg 1x, img/index-image/bridge-reason-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/index-image/bridge-reason-tablet.jpg 1x, img/index-image/bridge-reason-tablet@2x.jpg 2x">
+                  <img class="reason-card__image" alt="Фотография города" src="img/index-image/bridge-reason-mobile.jpg" srcset="img/index-image/bridge-reason-mobile@2x.jpg 2x" width="320"
+                    height="260">
+              </picture>
+            </div>
+            <!-- <img class="reason-card__image" src="img/devil-bridge-reason.jpg" alt="Фотография моста дьявола" width="320" height="260"> -->
           </li>
           <li class="reasons-list__item reason-card">
             <div class="reason-card__wrapper reason-card__wrapper--gray">
@@ -183,7 +208,8 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><b class="copyright__text text-description">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><b
+            class="copyright__text text-description">Разработано</b>
           <span class="visually-hidden">HTML Academy.</span>
           <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
