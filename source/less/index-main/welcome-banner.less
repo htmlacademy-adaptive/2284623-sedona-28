@@ -10,7 +10,7 @@
     right: 50%;
     bottom: 0;
     transform: translate(50%, 0%);
-    background-image: url("../img/intro-triangle.png");
+    background-image: url("../img/index-image/hero-divider.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
   }
@@ -22,10 +22,19 @@
   top: 50%;
   transform: translate(50%, -50%);
   display: block;
+
+  @media (min-width: 768px) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .welcome-banner__background {
   display: block;
   width: 100%;
   object-fit: cover;
+
+  @media (min-width: 768px) {
+    min-height: 518px;
+  }
 }

@@ -1,10 +1,22 @@
 .sedona-banner {
-  background-image: url("../img/sedona-text.svg"), url("../img/intro-triangle.png"), url("../img/banner-sedona.jpg");
+  background-image: url("../img/sedona-text.svg"), url("../img/index-image/hero-divider.svg"), url("../img/sedona-banner-mobile.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center center, center bottom, center center;
+  background-size: auto, 100% auto, auto;
   height: 158px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-text.svg"), url("../img/index-image/hero-divider.svg"), url("../img/sedona-banner-mobile@2x.jpg");
+  }
+
   @media (min-width: 768px) {
-    height: 246px;
+    height: 290px;
+    background-size: 460px 78px, auto, auto;
+    background-position: center center, center bottom, center bottom;
+    background-image: url("../img/sedona-text.svg"), url("../img/index-image/hero-divider.svg"), url("../img/index-image/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sedona-text.svg"), url("../img/index-image/hero-divider.svg"), url("../img/index-image/back-desktop@2x.jpg");
+    }
   }
 }
