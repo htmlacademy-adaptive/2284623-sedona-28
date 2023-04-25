@@ -14,16 +14,15 @@
 
 .social__icon {
   display: block;
+  fill: #81b3d2;
+  --social-white: rgba(255, 255, 255, 1);
 
-  &:hover rect {
+  &:hover {
     fill: #669ec0;
   }
 
-  &:active rect {
-    fill: #669ec0;
-  }
-
-  &:active path {
-    opacity: 0.3;
+  &:active {
+    fill: #5496bd;
+    --social-white: rgba(255, 255, 255, 0.3);
   }
 }
