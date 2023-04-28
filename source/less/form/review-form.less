@@ -20,7 +20,7 @@
         width: 100%;
         height: 1px;
         left: 0;
-        top: -34px;
+        top: -42px;
         background-color: #dbdbdb;
       }
     }
@@ -45,6 +45,11 @@
 .review-form__title {
   margin: 0;
   margin-bottom: 20px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
 
   &--line {
     position: relative;
@@ -70,6 +75,7 @@
   @media (min-width: 768px) {
     margin-bottom: 0;
     max-width: 384px;
+    width: auto;
   }
 }
 
@@ -78,13 +84,23 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    margin-top: 10px;
     align-self: center;
   }
 }
 
-.review-form__label--custom {
-  display: flex;
-  align-items: center;
+.review-form__label {
+  margin-left: 16px;
+
+  &--custom {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
 }
 
 .review-form__wrapper {
@@ -98,7 +114,8 @@
       width: 1px;
       background-color: #dbdbdb;
       left: calc(50% - 1px / 2);
-      top: calc(50% - 338px / 2);
+      // top: calc(50% - 338px / 2);
+      top: -7px;
     }
   }
 
@@ -106,7 +123,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 58px;
-    margin-bottom: 63px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 1200px) {
@@ -115,6 +132,14 @@
 
   & .form-fieldset {
     flex-grow: 1;
+
+    &:first-child {
+      padding-bottom: 39px;
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 34px;
+    }
   }
 }
 
@@ -127,7 +152,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 64px;
+    margin-bottom: 74px;
     width: 100%;
   }
 }

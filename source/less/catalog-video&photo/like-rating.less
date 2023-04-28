@@ -2,7 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  align-items: center;
+  align-items: baseline;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    gap: 9px;
+  }
 }
 
 .like-rating__value {
@@ -34,19 +39,25 @@
   }
 }
 
-.like-rating__button--click {
-  & path {
-    fill: #ff0000;
-    opacity: 1;
+.like-rating__button {
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
   }
 
-  &:hover path {
-    fill: #ff0000;
-    opacity: 0.3;
-  }
+  &--click {
+    & path {
+      fill: #ff0000;
+      opacity: 1;
+    }
 
-  &:active path {
-    fill: #000000;
-    opacity: 0.6;
+    &:hover path {
+      fill: #ff0000;
+      opacity: 0.3;
+    }
+
+    &:active path {
+      fill: #000000;
+      opacity: 0.6;
+    }
   }
 }
