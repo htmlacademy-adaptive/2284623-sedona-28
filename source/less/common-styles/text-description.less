@@ -8,6 +8,14 @@
   text-transform: uppercase;
   color: #333333;
 
+  & .text-description__br-desktop {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+
   &--left {
     text-align: left;
   }
@@ -26,5 +34,9 @@
 
   &--smaller {
     font-size: 12px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 }

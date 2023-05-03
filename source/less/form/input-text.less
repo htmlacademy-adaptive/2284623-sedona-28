@@ -5,6 +5,10 @@
   box-sizing: border-box;
   width: 100%;
 
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
   :placeholder-shown {
     opacity: 0.3;
   }
@@ -37,5 +41,9 @@
     min-height: 150px;
     resize: none;
     max-width: 768px;
+
+    @media (min-width: 768px) {
+      min-height: 160px;
+    }
   }
 }
