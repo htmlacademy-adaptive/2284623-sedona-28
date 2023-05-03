@@ -13,6 +13,10 @@
 
   @media (min-width: 1200px) {
     position: relative;
+
+    &:not(:first-child) .photos-list__title {
+      margin-bottom: 4px;
+    }
   }
 
   &:nth-child(2n+1) {
@@ -40,6 +44,11 @@
 
     @media (min-width: 1200px) {
       grid-column: 1 / 4;
+
+      & .photos-list__wrapper {
+        padding-left: 21px;
+        padding-top: 22px;
+      }
     }
   }
 }

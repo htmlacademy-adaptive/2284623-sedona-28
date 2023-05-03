@@ -9,9 +9,15 @@
     background-position: 18px top;
 
     @media (min-width: 768px) {
-      background-size: 77px 72px;
-      background-position: center 60px;
-      padding: 158px 33px 60px;
+      background-size: 79px 78px;
+      background-position: center 56px;
+      padding: 157px 33px 60px;
+    }
+
+    @media (min-width: 1200px) {
+      background-size: 82px 78px;
+      background-position: center 65px;
+      padding: 168px 50px 69px;
     }
   }
 
@@ -22,9 +28,15 @@
     background-position: 18px top;
 
     @media (min-width: 768px) {
-      background-size: 77px 72px;
-      background-position: center 62px;
-      padding: 156px 33px 61px;
+      background-size: 80px 76px;
+      background-position: center 56px;
+      padding: 155px 33px 61px;
+    }
+
+    @media (min-width: 1200px) {
+      background-size: 73px 78px;
+      background-position: center 65px;
+      padding: 165px 50px 69px;
     }
   }
 
@@ -35,9 +47,15 @@
     background-position: 18px top;
 
     @media (min-width: 768px) {
-      background-size: 77px 72px;
-      background-position: center 64px;
-      padding: 153px 33px 64px;
+      background-size: 82px 79px;
+      background-position: center 60px;
+      padding: 151px 33px 64px;
+    }
+
+    @media (min-width: 1200px) {
+      background-size: 96px 78px;
+      background-position: center 65px;
+      padding: 169px 50px 69px;
     }
   }
 }
@@ -51,6 +69,10 @@
     margin-bottom: 23px;
   }
 
+  @media (min-width: 1200px) {
+    margin-bottom: 24px;
+  }
+
   &.title--left {
     @media (min-width: 768px) {
       text-align: center;
@@ -61,11 +83,19 @@
 .advantages-card__description {
   margin: 0;
   padding: 0;
+  max-width: 300px;
+
+  & br {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
 
   &.text-description--left {
     @media (min-width: 768px) {
       text-align: center;
-      // width: calc(100% - 66px);
     }
   }
 }

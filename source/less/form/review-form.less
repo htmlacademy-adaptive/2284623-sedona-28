@@ -12,7 +12,7 @@
     margin: 0;
   }
 
-  &--line {
+  &--line-impression {
     &::before {
       @media (min-width: 768px) {
         content: "";
@@ -20,7 +20,21 @@
         width: 100%;
         height: 1px;
         left: 0;
-        top: -42px;
+        top: -41px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+
+  &--line-place {
+    &::before {
+      @media (min-width: 768px) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: -54px;
         background-color: #dbdbdb;
       }
     }
@@ -74,8 +88,12 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    max-width: 324px;
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
     max-width: 384px;
-    width: auto;
   }
 }
 
@@ -114,7 +132,6 @@
       width: 1px;
       background-color: #dbdbdb;
       left: calc(50% - 1px / 2);
-      // top: calc(50% - 338px / 2);
       top: -7px;
     }
   }
@@ -128,6 +145,7 @@
 
   @media (min-width: 1200px) {
     gap: 100px;
+    margin-bottom: 32px;
   }
 
   & .form-fieldset {
@@ -152,7 +170,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 74px;
+    margin-bottom: 64px;
     width: 100%;
   }
 }

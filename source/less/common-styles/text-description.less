@@ -8,6 +8,14 @@
   text-transform: uppercase;
   color: #333333;
 
+  & .text-description__br-desktop {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+
   &--left {
     text-align: left;
   }
