@@ -7,6 +7,8 @@
   <title>Оставьте свой отзыв</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,7 +18,7 @@
       <a class="main-header__logo">
         <img src="img/logo.svg" width="185" height="96" alt="Город Седона.">
       </a>
-      <nav class="main-header__nav main-nav main-nav--nojs main-nav--closed">
+      <nav class="main-header__nav main-nav main-nav--nojs main-nav--open">
         <ul class="main-nav__list site-list">
           <li class="site-list__item title">
             <a href="index.html">
@@ -118,7 +120,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__block review-form__block--line-place form-fieldset">
-            <legend class="review-form__title review-form__title--line title">Посещенные</br> достопримечательности:</legend>
+            <legend class="review-form__title review-form__title--line title">Посещенные<br> достопримечательности:</legend>
             <ul class="review-form__list review-form-list review-form-list--checkbox">
               <li class="review-form__list-item">
                 <label for="bridge-devil"
@@ -151,7 +153,7 @@
           </fieldset>
           <div class="review-form__block emotions-block">
             <p class="review-form__title title">Опишите свои эмоции:</p>
-            <label for="emotions" class="review-rorm__label label visually-hidden">Текстовое поле</label>
+            <label for="emotions" class="review-form__label label visually-hidden">Текстовое поле</label>
             <textarea class="review-form__input input-text input-text--emotions title title--capitalize title--left"
               id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
@@ -220,7 +222,7 @@
     <div class="modal-container modal-container--submit modal-container--hidden">
       <div class="modal modal--submit modal--hidden">
         <p class="modal__title title">Ваш отзыв отправлен!</p>
-        <p class="modal__text text-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <p class="modal__text modal__text--submit text-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время
           мы опубликуем его на сайте.</p>
         <div class="modal__button-wrapper">
           <button class="modal__button modal__button--submit button button--modal" type="button" id="submitClose">Закрыть
