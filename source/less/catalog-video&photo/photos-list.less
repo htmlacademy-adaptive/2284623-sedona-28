@@ -18,7 +18,12 @@
 
 .photos-list__title {
   align-self: flex-start;
+  text-align: left;
   margin: 0;
+
+  @media (min-width: 768px) {
+    max-width: 200px;
+  }
 
   @media (min-width: 1200px) {
     color: #ffffff;
@@ -29,9 +34,11 @@
   align-self: flex-start;
   margin: 0;
   margin-bottom: 11px;
+  text-align: left;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    max-width: 200px;
   }
 
   @media (min-width: 1200px) {
